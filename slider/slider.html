@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Depilaser - Slider Revolution</title>
+			<meta name="description" content="Slider Revolution Example" />
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="ThemePunch" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%2C500" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			<script type="text/javascript" src="js/rbtools.min.js"></script>
+			<script type="text/javascript" src="js/rs6.min.js"></script>
+			
+			<script type="text/javascript">function setREVStartSize(e){			
+			try {								
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw===0 || isNaN(pw) ? window.innerWidth : pw;
+				e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+				if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+					newh = Math.max(e.mh,window.innerHeight);				
+				else{					
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+					e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+										
+					var nl = new Array(e.rl.length),
+						ix = 0,						
+						sl;					
+					e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+					for (var i in e.rl) nl[i] = e.rl[i]<window.innerWidth ? 0 : e.rl[i];
+					sl = nl[0];									
+					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+
+					newh =  (e.type==="carousel" && e.justify==="true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
+				}			
+				
+				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+				document.getElementById(e.c).height = newh;
+				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+			} catch(e){
+				console.log("Failure at Presize of Slider:" + e)
+			}					   
+		  };</script>
+		</head>
+		
+		
+
+			<!-- START Depilaser REVOLUTION SLIDER 6.2.2 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_5_1_wrapper" data-alias="parallax-scene1-1" data-source="gallery" style="background:#eef0f1;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;max-width:">
+				<rs-module id="rev_slider_5_1" style="display:none;" data-version="6.2.2">
+					<rs-slides>
+						<rs-slide data-key="rs-14" data-title="Slide" data-anim="ei:d;eo:d;s:d;r:0;t:notransition;sl:d;">
+							<img src="assets/transparent.png" data-parallax="off" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-5-slide-14-layer-1" 
+								class="rs-pxl-1"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="l:22;"
+								data-dim="w:['1920px','1920px','1920px','1920px'];h:['904px','904px','904px','904px'];"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.out;st:500;sp:500;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								style="z-index:8;"
+							><img src="assets/level41.jpg" width="1920" height="904" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-2" 
+								class="rs-pxl-2"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;"
+								data-text="l:22;"
+								data-dim="w:['1920px','1920px','1920px','1920px'];h:['904px','904px','904px','904px'];"
+								data-frame_0="sX:1.1;sY:1.1;tp:600;"
+								data-frame_1="tp:600;e:power2.out;st:750;sp:1500;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								style="z-index:9;"
+							><img src="assets/level32.png" width="1920" height="904" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-3" 
+								class="rs-pxl-3"
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:0,0,0,-5px;y:m;"
+								data-text="l:22;"
+								data-dim="w:['439px','439px','439px','439px'];h:['703px','703px','703px','703px'];"
+								data-frame_0="sX:1.1;sY:1.1;tp:600;"
+								data-frame_1="tp:600;e:power2.out;st:1000;sp:1500;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								style="z-index:10;"
+							><img src="assets/happy-young-slim-woman-with-beautiful-perfect-body-posing-on-white-full-length-portrait.png" width="439" height="703" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-7" 
+								class="RedDot tp-shape tp-shapewrapper rs-pxl-3"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:694px,694px,694px,317px;yo:130px,130px,130px,133px;"
+								data-dim="w:26px;h:26px;"
+								data-actions='o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-8;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-8;||o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-12;d:500;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-12;'
+								data-border="bos:solid;boc:rgba(255,255,255,1);bow:5px,5px,5px,5px;bor:50px,50px,50px,50px;"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.inOut;st:1250;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								data-frame_hover="c:#000;bgc:rgba(255,255,255,0.75);boc:#d50000;bor:50px,50px,50px,50px;bos:solid;bow:5px,5px,5px,5px;oX:50;oY:50;e:power1.inOut;"
+								style="z-index:20;background-color:rgba(213,0,0,1);cursor:pointer;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-13" 
+								class="RedDot tp-shape tp-shapewrapper rs-pxl-2"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:658px,658px,658px,278px;yo:333px,333px,333px,337px;"
+								data-dim="w:26px;h:26px;"
+								data-actions='o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-6;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-6;||o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-11;d:500;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-11;'
+								data-border="bos:solid;boc:rgba(255,255,255,1);bow:5px,5px,5px,5px;bor:50px,50px,50px,50px;"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.inOut;st:1250;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								data-frame_hover="c:#000;bgc:rgba(255,255,255,0.75);boc:#d50000;bor:50px,50px,50px,50px;bos:solid;bow:5px,5px,5px,5px;oX:50;oY:50;e:power1.inOut;"
+								style="z-index:11;background-color:rgba(213,0,0,1);cursor:pointer;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-14" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,1)"
+								data-rsp_ch="on"
+								data-xy="xo:690px,690px,690px,310px;yo:336px,336px,336px,340px;"
+								data-text="l:20;fw:500;"
+								data-frame_0="x:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:-100%;tp:600;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:12;font-family:Roboto;"
+							>Bikini 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-15" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,0.50)"
+								data-rsp_ch="on"
+								data-xy="xo:755px,755px,755px,310px;yo:327px,327px,327px,364px;"
+								data-text="s:15;l:20;fw:500;"
+								data-frame_0="y:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="y:-100%;tp:600;e:nothing;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:13;font-family:Roboto;"
+							>Reduce la pigmentación<br> de la
+piel 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-16" 
+								class="RedDot tp-shape tp-shapewrapper rs-pxl-2"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:557px,557px,557px,213px;yo:547px,547px,547px,563px;"
+								data-dim="w:26px;h:26px;"
+								data-actions='o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-6;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-6;||o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-11;d:500;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-11;'
+								data-border="bos:solid;boc:rgba(255,255,255,1);bow:5px,5px,5px,5px;bor:50px,50px,50px,50px;"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.inOut;st:1250;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								data-frame_hover="c:#000;bgc:rgba(255,255,255,0.75);boc:#d50000;bor:50px,50px,50px,50px;bos:solid;bow:5px,5px,5px,5px;oX:50;oY:50;e:power1.inOut;"
+								style="z-index:15;background-color:rgba(213,0,0,1);cursor:pointer;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-17" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,1)"
+								data-rsp_ch="on"
+								data-xy="xo:479px,479px,479px,246px;yo:550px,550px,550px,566px;"
+								data-text="l:20;fw:500;"
+								data-frame_0="x:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:-100%;tp:600;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:18;font-family:Roboto;"
+							>Piernas 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-18" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,0.50)"
+								data-rsp_ch="on"
+								data-xy="xo:369px,369px,369px,245px;yo:550px,550px,550px,588px;"
+								data-text="s:15;l:20;fw:500;a:right,right,right,left;"
+								data-frame_0="y:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="y:-100%;tp:600;e:nothing;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:23;font-family:Roboto;"
+							>Evita los vellos<br> encarnados. 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-19" 
+								class="RedDot tp-shape tp-shapewrapper rs-pxl-2"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:526px,526px,526px,141px;yo:260px,260px,260px,269px;"
+								data-dim="w:26px;h:26px;"
+								data-actions='o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-6;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-6;||o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-11;d:500;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-11;'
+								data-border="bos:solid;boc:rgba(255,255,255,1);bow:5px,5px,5px,5px;bor:50px,50px,50px,50px;"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.inOut;st:1250;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								data-frame_hover="c:#000;bgc:rgba(255,255,255,0.75);boc:#d50000;bor:50px,50px,50px,50px;bos:solid;bow:5px,5px,5px,5px;oX:50;oY:50;e:power1.inOut;"
+								style="z-index:14;background-color:rgba(213,0,0,1);cursor:pointer;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-20" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,1)"
+								data-rsp_ch="on"
+								data-xy="xo:457px,457px,457px,72px;yo:260px,260px,260px,269px;"
+								data-text="l:20;fw:500;"
+								data-frame_0="x:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:-100%;tp:600;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:17;font-family:Roboto;"
+							>Brazos 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-21" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,0.50)"
+								data-rsp_ch="on"
+								data-xy="xo:293px,293px,293px,7px;yo:259px,259px,259px,298px;"
+								data-text="s:15;l:20;fw:500;a:right;"
+								data-frame_0="y:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="y:-100%;tp:600;e:nothing;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:22;font-family:Roboto;"
+							>Ofrece resultados muy<br>
+satisfactorios desde la<br>
+primera sesión. 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-23" 
+								class="RedDot tp-shape tp-shapewrapper rs-pxl-2"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:565px,565px,565px,177px;yo:88px,88px,88px,87px;"
+								data-dim="w:26px;h:26px;"
+								data-actions='o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-6;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-6;||o:mouseenter;a:startlayer;layer:slider-5-slide-14-layer-11;d:500;||o:mouseleave;a:stoplayer;layer:slider-5-slide-14-layer-11;'
+								data-border="bos:solid;boc:rgba(255,255,255,1);bow:5px,5px,5px,5px;bor:50px,50px,50px,50px;"
+								data-frame_0="tp:600;"
+								data-frame_1="tp:600;e:power2.inOut;st:1250;"
+								data-frame_999="o:0;tp:600;e:nothing;st:w;"
+								data-frame_hover="c:#000;bgc:rgba(255,255,255,0.75);boc:#d50000;bor:50px,50px,50px,50px;bos:solid;bow:5px,5px,5px,5px;oX:50;oY:50;e:power1.inOut;"
+								style="z-index:14;background-color:rgba(213,0,0,1);cursor:pointer;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-24" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,0.50)"
+								data-rsp_ch="on"
+								data-xy="xo:304px,304px,304px,9px;yo:87px,87px,87px,119px;"
+								data-text="s:15;l:20;fw:500;a:right;"
+								data-frame_0="y:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="y:-100%;tp:600;e:nothing;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:24;font-family:Roboto;"
+							>Desaparición total del vello<br>
+en muy pocas sesiones 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-25" 
+								class="subcaption rs-pxl-2"
+								data-type="text"
+								data-color="rgba(0,0,0,1)"
+								data-rsp_ch="on"
+								data-xy="xo:497px,497px,497px,115px;yo:88px,88px,88px,90px;"
+								data-text="l:20;fw:500;"
+								data-frame_0="x:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:-100%;tp:600;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:19;font-family:Roboto;"
+							>Rostro 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-26" 
+								class="subcaption rs-pxl-3"
+								data-type="text"
+								data-color="rgba(0,0,0,1)"
+								data-rsp_ch="on"
+								data-xy="xo:729px,729px,729px,352px;yo:134px,134px,134px,137px;"
+								data-text="l:20;fw:500;"
+								data-dim="h:20px;"
+								data-frame_0="x:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:-100%;tp:600;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:21;font-family:Roboto;"
+							>Axilas 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-5-slide-14-layer-27" 
+								class="subcaption rs-pxl-3"
+								data-type="text"
+								data-color="rgba(0,0,0,0.50)"
+								data-rsp_ch="on"
+								data-xy="xo:792px,792px,792px,325px;yo:128px,128px,128px,163px;"
+								data-text="s:15;l:20;fw:500;"
+								data-frame_0="y:-100%;o:1;tp:600;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="tp:600;st:1250;sp:1000;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="y:-100%;tp:600;e:nothing;st:w;sp:500;"
+								data-frame_999_mask="u:t;"
+								style="z-index:25;font-family:Roboto;"
+							>Obtén mayor suavidad<br> de la axila 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+				</rs-module>
+		<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
+			function revslider_showDoubleJqueryError(sliderID) {
+				var err = "<div class='rs_error_message_box'>";
+				err += "<div class='rs_error_message_oops'>Oops...</div>";
+				err += "<div class='rs_error_message_content'>";
+				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+				err += "</div>";
+			err += "</div>";
+				jQuery(sliderID).show().html(err);
+			}
+		}
+		</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script type="text/javascript">
+					
+					var	revapi5,
+						tpj;
+					jQuery(function() {
+						tpj = jQuery;
+						if(tpj("#rev_slider_5_1").revolution == undefined){
+							revslider_showDoubleJqueryError("#rev_slider_5_1");
+						}else{
+							revapi5 = tpj("#rev_slider_5_1").show().revolution({
+								sliderType:"hero",
+								jsFileLocation:"js/",
+								visibilityLevels:"1240,1240,1240,480",
+								gridwidth:"1240,1240,1240,480",
+								gridheight:"700,700,700,720",
+								editorheight:"700,768,960,720",
+								responsiveLevels:"1240,1240,1240,480",
+								disableProgressBar:"on",
+								navigation: {
+									onHoverStop:false
+								},
+								parallax: {
+									levels:[5,10,20,30,25,30,35,40,45,50,47,48,49,50,51,55],
+									type:"3D",
+									origo:"slidercenter",
+									speed:2000,
+									ddd_overflow:"hidden",
+									ddd_z_correction:65
+								},
+								fallbacks: {
+									ignoreHeightChanges:"",
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+				</script>
+
+
+		<body>
+					</body>
+		
+		</html>
+		
